@@ -1,9 +1,6 @@
 /* Character,word and space counting program */
 #include "header.h"
 
-#define IN  1
-#define OUT 0
-
 int main()
 {
     char a[] = "There is one	tab space '\n',1 newline char";

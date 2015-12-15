@@ -43,10 +43,8 @@ int main()
     
     clearBuffer(out);
 
-   printf("*ptr == %c\n",*ptr);
-    while((*ptr) != '\0');
+    while (*ptr != '\0')
     {
-       printf("*ptr == %c\n",*ptr);
        if((*ptr == ' ') || (*ptr == '\n') || (*ptr == '\t'))
         {
             printBuffer(out);

@@ -7,4 +7,5 @@
 #define BUFFERSIZE 100
 #define IN         1
 #define OUT        0
-
+#define MAXWORDS   20
+#define MAXWORDLEN 20

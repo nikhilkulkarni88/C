@@ -1,6 +1,11 @@
 /* Program to print histogram horizontally and vertically */
 #include "header.h"
 
+/*****************************************
+FUNCTION   : To print a histogram Horizontally
+INPUT ARGS : Pointer to char
+OUTPUT ARGS: [None]
+******************************************/
 void horizontalPrint(char len[])
 {
     int i = 0, j = 0;
@@ -15,10 +20,15 @@ void horizontalPrint(char len[])
     return;
 }
 
+/*****************************************
+FUNCTION   : To print a histogram Vertically
+INPUT ARGS : Pointer to char
+OUTPUT ARGS: [None]
+******************************************/
 void verticalPrint(char len[])
 {
     int i,j;
-    for(i = 7/*MAXWORDLEN*/;i > 0 ; i--)
+    for(i = MAXWORDLEN;i > 0 ; i--)
     {
         for(j = 0; len[j] != -1; j++)
         {
@@ -60,11 +70,7 @@ int main()
     len[i] = count;
     len[++i] = -1;
 
-    for(i=0;len[i] !=-1; i++)
-    {
-        printf("len=%d\n",len[i]);
-    }
-    //horizontalPrint(len);
+    horizontalPrint(len);
     verticalPrint(len);
     return 0;
 }

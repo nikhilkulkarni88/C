@@ -18,12 +18,10 @@ void horizontalPrint(char len[])
 void verticalPrint(char len[])
 {
     int i,j;
-    for(i = 7/*MAXWORDLEN*/;i < 1 ; i--)
+    for(i = 7/*MAXWORDLEN*/;i > 0 ; i--)
     {
-        printf("jk\n");
         for(j = 0; len[j] != -1; j++)
         {
-            printf("check\n");
             if(len[j] < i)
             {
                 printf(" ");
